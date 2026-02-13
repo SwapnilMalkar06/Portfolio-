@@ -723,49 +723,23 @@
             box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
         }
 
+        /* Gmail Feedback Form Placeholder */
         .contact-form {
             background: var(--card-bg);
             border: 1px solid var(--border);
             border-radius: 25px;
             padding: 2.5rem;
             backdrop-filter: blur(10px);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--text-dim);
-            font-weight: 600;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--border);
-            border-radius: 15px;
-            color: var(--text);
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--accent);
-            background: rgba(255, 255, 255, 0.08);
-            box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 150px;
+        .feedback-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
         }
 
         /* Footer */
@@ -898,9 +872,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>
-                        Hi, I'm <span class="gradient-text">Swapnil Malkar</span>
-                    </h1>
+                    <h1>Hi, I'm <span class="gradient-text">Swapnil Malkar</span></h1>
                     <p class="subtitle">Full-Stack Web Developer</p>
                     <p>
                         Goal-oriented developer specializing in PHP and Python, building responsive web applications with scalable backend architectures. Currently pursuing MCA at KIT's Institute of Management Education and Research to deepen expertise in full-stack development and advanced database systems.
@@ -955,10 +927,7 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-category fade-in">
-                    <h3>
-                        <div class="skill-icon">🎨</div>
-                        Frontend
-                    </h3>
+                    <h3><div class="skill-icon">🎨</div> Frontend</h3>
                     <div class="skill-list">
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
@@ -968,10 +937,7 @@
                     </div>
                 </div>
                 <div class="skill-category fade-in">
-                    <h3>
-                        <div class="skill-icon">⚙️</div>
-                        Backend
-                    </h3>
+                    <h3><div class="skill-icon">⚙️</div> Backend</h3>
                     <div class="skill-list">
                         <span class="skill-tag">PHP</span>
                         <span class="skill-tag">Python</span>
@@ -981,10 +947,7 @@
                     </div>
                 </div>
                 <div class="skill-category fade-in">
-                    <h3>
-                        <div class="skill-icon">🛠️</div>
-                        Tools & Technologies
-                    </h3>
+                    <h3><div class="skill-icon">🛠️</div> Tools & Technologies</h3>
                     <div class="skill-list">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">GitHub</span>
@@ -994,10 +957,7 @@
                     </div>
                 </div>
                 <div class="skill-category fade-in">
-                    <h3>
-                        <div class="skill-icon">🚀</div>
-                        Learning & Interests
-                    </h3>
+                    <h3><div class="skill-icon">🚀</div> Learning & Interests</h3>
                     <div class="skill-list">
                         <span class="skill-tag">MongoDB</span>
                         <span class="skill-tag">NoSQL</span>
@@ -1017,9 +977,7 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card fade-in">
-                    <div class="project-header" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
-                        🌾
-                    </div>
+                    <div class="project-header" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">🌾</div>
                     <div class="project-content">
                         <h3 class="project-title">KisanDost</h3>
                         <div class="project-tech">
@@ -1028,9 +986,7 @@
                             <span class="tech-badge">MongoDB</span>
                             <span class="tech-badge">AI Chatbot</span>
                         </div>
-                        <p class="project-desc">
-                            AI-driven crop recommendation and market tracking system for Indian farmers. Features multilingual support and real-time data.
-                        </p>
+                        <p class="project-desc">AI-driven crop recommendation and market tracking system for Indian farmers. Features multilingual support and real-time data.</p>
                         <div class="project-links">
                             <a href="https://github.com/SwapnilMalkar06" class="project-link" target="_blank">View Code</a>
                         </div>
@@ -1038,9 +994,7 @@
                 </div>
 
                 <div class="project-card fade-in">
-                    <div class="project-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        ⏱️
-                    </div>
+                    <div class="project-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">⏱️</div>
                     <div class="project-content">
                         <h3 class="project-title">TaskMaster</h3>
                         <div class="project-tech">
@@ -1049,9 +1003,7 @@
                             <span class="tech-badge">MySQL</span>
                             <span class="tech-badge">Focus Timer</span>
                         </div>
-                        <p class="project-desc">
-                            Student personal assistant featuring task management and AI mentorship. Helps manage daily study schedules effectively.
-                        </p>
+                        <p class="project-desc">Student personal assistant featuring task management and AI mentorship. Helps manage daily study schedules effectively.</p>
                         <div class="project-links">
                             <a href="https://github.com/SwapnilMalkar06" class="project-link" target="_blank">View Code</a>
                         </div>
@@ -1059,9 +1011,7 @@
                 </div>
 
                 <div class="project-card fade-in">
-                    <div class="project-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        📚
-                    </div>
+                    <div class="project-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">📚</div>
                     <div class="project-content">
                         <h3 class="project-title">Course Katta</h3>
                         <div class="project-tech">
@@ -1069,9 +1019,7 @@
                             <span class="tech-badge">XAMPP</span>
                             <span class="tech-badge">MySQL</span>
                         </div>
-                        <p class="project-desc">
-                            Free course platform for students with performance tracking and personalized learning experiences via session analysis.
-                        </p>
+                        <p class="project-desc">Free course platform for students with performance tracking and personalized learning experiences via session analysis.</p>
                         <div class="project-links">
                             <a href="https://github.com/SwapnilMalkar06" class="project-link" target="_blank">View Code</a>
                         </div>
@@ -1094,9 +1042,7 @@
                         <h3>Master of Computer Application (MCA)</h3>
                         <p class="degree">MCA I Year - Pursuing</p>
                         <p class="institution">KIT's IMER Kolhapur (Autonomous Institute)</p>
-                        <p style="color: var(--text-dim); margin-top: 1rem;">
-                            Specializing in full-stack development and advanced database systems. Currently exploring NoSQL and scalable architectures.
-                        </p>
+                        <p style="color: var(--text-dim); margin-top: 1rem;">Specializing in full-stack development and advanced database systems. Currently exploring NoSQL and scalable architectures.</p>
                     </div>
                 </div>
 
@@ -1107,9 +1053,7 @@
                         <p class="degree">BCA - Graduated 2025</p>
                         <p class="institution">Shivaji University, Kolhapur</p>
                         <span class="cgpa">A+ Grade</span>
-                        <p style="color: var(--text-dim); margin-top: 1rem;">
-                            Strong foundation in computer science fundamentals, programming languages, and web development technologies.
-                        </p>
+                        <p style="color: var(--text-dim); margin-top: 1rem;">Strong foundation in computer science fundamentals, programming languages, and web development technologies.</p>
                     </div>
                 </div>
             </div>
@@ -1128,7 +1072,7 @@
                         <div class="contact-icon">📧</div>
                         <div>
                             <h4>Email</h4>
-                            <p><a href="mailto:swapnilmalkar05@gmail.com">swapnilmalkar05@gmail.com</a></p>
+                            <p><a href="mailto:swapnilmalkar05@gmail.com?subject=Portfolio%20Inquiry">swapnilmalkar05@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1146,31 +1090,20 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/swapnil-malkar-a70129268/" target="_blank" class="social-link" title="LinkedIn">
-                            💼
-                        </a>
-                        <a href="https://github.com/SwapnilMalkar06" target="_blank" class="social-link" title="GitHub">
-                            💻
-                        </a>
+                        <a href="https://www.linkedin.com/in/swapnil-malkar-a70129268/" target="_blank" class="social-link" title="LinkedIn">💼</a>
+                        <a href="https://github.com/SwapnilMalkar06" target="_blank" class="social-link" title="GitHub">💻</a>
                     </div>
                 </div>
 
                 <div class="contact-form fade-in">
-                    <form id="feedbackForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" id="submitBtn" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                    </form>
+                    <div class="feedback-icon">📩</div>
+                    <h3 style="margin-bottom: 1rem;">Send Feedback</h3>
+                    <p style="color: var(--text-dim); margin-bottom: 2rem;">I value your thoughts! Click the button below to send your feedback directly via Gmail.</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=swapnilmalkar05@gmail.com&su=Feedback+from+Portfolio&body=Hi+Swapnil," 
+                       target="_blank" 
+                       class="btn btn-primary">
+                        Compose in Gmail
+                    </a>
                 </div>
             </div>
         </div>
@@ -1183,97 +1116,37 @@
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
 
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.fade-in').forEach(element => {
-            observer.observe(element);
-        });
+        document.querySelectorAll('.fade-in').forEach(element => { observer.observe(element); });
 
-        // Active navigation highlighting
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section');
-            
             sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.scrollY >= (sectionTop - 200)) {
+                if (window.scrollY >= (section.offsetTop - 200)) {
                     current = section.getAttribute('id');
                 }
             });
-
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
+                if (link.getAttribute('href').slice(1) === current) { link.classList.add('active'); }
             });
-        });
-
-        // FEEDBACK FORM SUBMISSION LOGIC
-        document.getElementById('feedbackForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const submitBtn = document.getElementById('submitBtn');
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                message: document.getElementById('message').value
-            };
-
-            // UI Feedback
-            submitBtn.innerText = "Sending...";
-            submitBtn.disabled = true;
-
-            try {
-                // Connecting to your Flask Backend
-                const response = await fetch('http://127.0.0.1:5000/submit_feedback', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData)
-                });
-
-                const result = await response.json();
-                
-                if (result.status === 'success') {
-                    alert('Feedback stored successfully in MySQL! Thanks for reaching out, Swapnil.');
-                    this.reset();
-                } else {
-                    alert('Error: ' + result.message);
-                }
-            } catch (error) {
-                alert('Could not connect to the backend server. Please ensure app.py is running.');
-                console.error('Error:', error);
-            } finally {
-                submitBtn.innerText = "Send Message";
-                submitBtn.disabled = false;
-            }
         });
     </script>
 </body>
